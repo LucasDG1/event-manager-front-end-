@@ -176,7 +176,7 @@ const events = [
   </section>
   <div class="flex justify-center items-center flex-col">
         <h2 class="font-bold pt-20 text-3xl">Ontdek Onze Events</h2>
-        <p class="text-gray-400 text-xl pt-5">Van inspirerende conferenties tot praktische workshops - vind het event dat perfect bij je past</p>
+        <p class="text-gray-400 text-xl pt-5 text-center">Van inspirerende conferenties tot praktische workshops <br></br> vind het event dat perfect bij je past</p>
     </div>
     <div class="flex justify-center mt-10">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 rounded-lg">

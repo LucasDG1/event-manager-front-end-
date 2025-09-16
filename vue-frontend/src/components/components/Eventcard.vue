@@ -21,7 +21,7 @@ function formatDate(date) {
 
 <template>
   <div
-    class="overflow-hidden transition-all duration-200 w-72"
+    class="overflow-hidden transition-all duration-200 w-72 rounded-lg border-1 border-gray-200"
     :class="isFull 
       ? 'opacity-75 cursor-not-allowed' 
       : 'cursor-pointer hover:shadow-lg hover:scale-[1.02]'"
@@ -32,13 +32,13 @@ function formatDate(date) {
       <img
         :src="event.image"
         :alt="event.title"
-        class="w-full h-48 object-cover"
+        class="w-full h-48 object-cover rounded-t-lg"
       />
 
       <!-- Overlay als volgeboekt -->
       <div
         v-if="isFull"
-        class="absolute inset-0 bg-red-600/80 flex items-center justify-center"
+        class="absolute inset-0 bg-red-600/80 flex items-center justify-center rounded-t-lg"
       >
         <span class="bg-white text-red-600 px-3 py-1 rounded font-semibold">
           Volgeboekt
