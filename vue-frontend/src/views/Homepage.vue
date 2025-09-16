@@ -92,13 +92,102 @@ const events = [
     availableSeats: 90,
     price: 129.99,
   },
-]
+  {
+    id: 9,
+    title: "AI & Innovation Summit",
+    image: "https://picsum.photos/600/300?random=9",
+    startDate: new Date("2025-12-10"),
+    endDate: new Date("2025-12-12"),
+    presenter: "TechFuture Group",
+    location: "Groningen",
+    availableSeats: 300,
+    price: 349.0,
+  },
+  {
+    id: 10,
+    title: "Food & Wine Festival",
+    image: "https://picsum.photos/600/300?random=10",
+    startDate: new Date("2025-08-20"),
+    endDate: new Date("2025-08-21"),
+    presenter: "Food Lovers NL",
+    location: "Leiden",
+    availableSeats: 500,
+    price: 45.0,
+  },
+  {
+    id: 11,
+    title: "Yoga & Mindfulness Retreat",
+    image: "https://picsum.photos/600/300?random=11",
+    startDate: new Date("2025-07-05"),
+    endDate: new Date("2025-07-07"),
+    presenter: "Peaceful Minds",
+    location: "Veluwe",
+    availableSeats: 40,
+    price: 199.0,
+  },
+  {
+    id: 12,
+    title: "Photography Workshop",
+    image: "https://picsum.photos/600/300?random=12",
+    startDate: new Date("2025-09-12"),
+    endDate: new Date("2025-09-12"),
+    presenter: "Lisa Vermeer",
+    location: "Zwolle",
+    availableSeats: 18,
+    price: 89.0,
+  },
+  {
+    id: 13,
+    title: "Digital Art Exhibition",
+    image: "https://picsum.photos/600/300?random=13",
+    startDate: new Date("2025-09-01"),
+    endDate: new Date("2025-09-30"),
+    presenter: "Modern Arts NL",
+    location: "Eindhoven",
+    availableSeats: 0,
+    price: 15.0,
+  },
+  {
+    id: 14,
+    title: "Healthcare Innovation Forum",
+    image: "https://picsum.photos/600/300?random=14",
+    startDate: new Date("2025-11-20"),
+    endDate: new Date("2025-11-21"),
+    presenter: "HealthTech NL",
+    location: "Utrecht",
+    availableSeats: 120,
+    price: 189.0,
+  },
+  {
+    id: 15,
+    title: "Music Production Masterclass",
+    image: "https://picsum.photos/600/300?random=15",
+    startDate: new Date("2025-06-15"),
+    endDate: new Date("2025-06-16"),
+    presenter: "DJ Martinus",
+    location: "Tilburg",
+    availableSeats: 30,
+    price: 249.0,
+  },
+  {
+    id: 16,
+    title: "Climate Change Symposium",
+    image: "https://picsum.photos/600/300?random=16",
+    startDate: new Date("2025-10-05"),
+    endDate: new Date("2025-10-06"),
+    presenter: "GreenFuture Org",
+    location: "Delft",
+    availableSeats: 150,
+    price: 119.0,
+  },
+];
+
 </script>
 
 <template>
   <Header />
   <section class="relative bg-gradient-to-br from-blue-50 to-indigo-100 overflow-hidden">
-    <!-- Background Image with Overlay -->
+
     <div class="absolute inset-0">
       <img
         src="https://images.unsplash.com/photo-1634155938686-24a26c55d71a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25mZXJlbmNlJTIwZXZlbnQlMjBhdWRpZW5jZXxlbnwxfHx8fDE3NTc5MjgxNzR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
@@ -108,10 +197,10 @@ const events = [
       <div class="absolute inset-0 bg-blue-900/60"></div>
     </div>
 
-    <!-- Content -->
+   
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
       <div class="text-center">
-        <!-- Badge -->
+
         <div class="flex justify-center mb-6">
           <div
             class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 text-white"
@@ -121,19 +210,19 @@ const events = [
           </div>
         </div>
 
-        <!-- Heading -->
+  
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
           Ontdek en Boek
           <span class="block text-blue-200">Geweldige Events</span>
         </h1>
 
-        <!-- Subtext -->
+
         <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
           Van inspirerende conferenties tot intieme workshops - vind het perfecte event dat past bij
           jouw interesses en boek direct online.
         </p>
 
-        <!-- Buttons -->
+
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <button
             @click="onViewEvents"
@@ -151,21 +240,21 @@ const events = [
         </div>
       </div>
       <div class="mt-16 grid grid-cols-2 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
-        <!-- Stat 1 -->
+
         <div class="text-center">
           <i class="fa-solid fa-calendar-check text-blue-200 text-3xl mb-2"></i>
           <div class="text-3xl font-bold text-white mb-1">500+</div>
           <div class="text-blue-200 text-sm">Events per jaar</div>
         </div>
 
-        <!-- Stat 2 -->
+
         <div class="text-center">
           <i class="fa-solid fa-users text-blue-200 text-3xl mb-2"></i>
           <div class="text-3xl font-bold text-white mb-1">50K+</div>
           <div class="text-blue-200 text-sm">Tevreden bezoekers</div>
         </div>
 
-        <!-- Stat 3 -->
+ 
         <div class="text-center col-span-2 md:col-span-1">
           <i class="fa-solid fa-star text-blue-200 text-3xl mb-2"></i>
           <div class="text-3xl font-bold text-white mb-1">98%</div>
