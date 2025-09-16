@@ -19,7 +19,7 @@ import { useRouter } from 'vue-router'
 const router = useRouter()
 
 function goToEvent() {
-  router.push({ name: 'Eventinfo', params: { id: props.event.id } })
+  router.push({ name: 'EventInfo', params: { id: props.event.id } })
 }
 </script>
 
