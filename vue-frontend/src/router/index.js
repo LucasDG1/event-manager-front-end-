@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Homepage from '../views/Homepage.vue'
-import EventInfo from '../views/Eventinfo.vue'
+import EventInfo from '../views/EventInfo.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Homepage },
