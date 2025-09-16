@@ -4,7 +4,7 @@ import Eventinfo from '../views/Eventinfo.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Homepage },
-  { path: '/event/:id', name: 'Eventinfo', component: Eventinfo, props: true }, // <--- props: true
+  { path: '/event/:id', name: 'Eventinfo', component: Eventinfo, props: true },
 ]
 
 const router = createRouter({
